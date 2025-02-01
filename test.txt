@@ -1,1 +1,168 @@
 test
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~
+$ git status
+\fatal: not a git repository (or any of the parent directories): .git
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~
+$ git config
+error: no action specified
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~
+$ git status
+fatal: not a git repository (or any of the parent directories): .git
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~
+$ cd /c/Users/lspum/OneDrive/Desktop/gitcc
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc
+$ git init
+Initialized empty Git repository in C:/Users/lspum/OneDrive/Desktop/gitcc/.git/
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ git config user.email "rzgandia@Gmail.com"
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ git config user.name "Ricci-Gandia"
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ remote add -u origin main
+bash: remote: command not found
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ git add "crash-course.txt"
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ git commit -m "first commit"
+[master (root-commit) dbdf1e0] first commit
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 crash-course.txt
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ git log
+commit dbdf1e0ca589cbf84ddd3269ec1804bacb0d8071 (HEAD -> master)
+Author: Ricci-Gandia <rzgandia@Gmail.com>
+Date:   Sat Feb 1 16:11:54 2025 +0800
+
+    first commit
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (master)
+$ git branch -m main
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git remote add origin https://github.com/Ricci-Gandia/git-cc.git
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git push -u origin main
+bash: $: command not found
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git push -u origin main
+info: please complete authentication in your browser...
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 219 bytes | 219.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Ricci-Gandia/git-cc.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git push
+Everything up-to-date
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git add "crash-course.txt"
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   crash-course.txt
+
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git commit -m "Catch up"
+[main 8f828e0] Catch up
+ 1 file changed, 3 insertions(+)
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git push
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 307 bytes | 307.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Ricci-Gandia/git-cc.git
+   dbdf1e0..8f828e0  main -> main
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git pull
+remote: Enumerating objects: 5, done.
+remote: Counting objects: 100% (5/5), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (3/3), 1024 bytes | 42.00 KiB/s, done.
+From https://github.com/Ricci-Gandia/git-cc
+   8f828e0..701dc63  main       -> origin/main
+Updating 8f828e0..701dc63
+Fast-forward
+ crash-course.txt | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git add "crash-course.txt"
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git push
+Everything up-to-date
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git commit -m "update"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git pull
+Already up to date.
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git add "test.txt"
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git commit -m "test"
+[main 7f46e85] test
+ 1 file changed, 1 insertion(+)
+ create mode 100644 test.txt
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+$ git push
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Ricci-Gandia/git-cc.git
+   701dc63..7f46e85  main -> main
