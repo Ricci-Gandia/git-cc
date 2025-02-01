@@ -2,3 +2,4 @@ Name : Ricci Zasha S. Gandia
 Section : BSCS-2A
 Program : BS CS Computer Science
 Address : San Pablo City
+Age : 19
