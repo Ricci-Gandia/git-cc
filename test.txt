@@ -166,3 +166,35 @@ Writing objects: 100% (3/3), 280 bytes | 280.00 KiB/s, done.
 Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
 To https://github.com/Ricci-Gandia/git-cc.git
    701dc63..7f46e85  main -> main
+
+///
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~ (master)
+$ cd /c/Users/lspum/OneDrive/Desktop/gitcc
+
+lspum@DESKTOP-6T19JN4 MINGW64 ~/OneDrive/Desktop/gitcc (main)
+
+$ git log
+commit 081810efb0482ea20345b3f878b21f9b8ce29cdb (HEAD -> main, origin/main)
+Author: Ricci-Gandia <rzgandia@Gmail.com>
+Date:   Sat Feb 1 16:26:25 2025 +0800
+
+    test changes
+
+commit 7f46e858becd88d9df382307cd36971b00b0e072
+Author: Ricci-Gandia <rzgandia@Gmail.com>
+Date:   Sat Feb 1 16:24:13 2025 +0800
+
+    test
+
+commit 701dc63ad3ba84fd4b61e068391f82183a032f4a
+Author: Ricci-Gandia <162935476+Ricci-Gandia@users.noreply.github.com>
+Date:   Sat Feb 1 16:18:30 2025 +0800
+
+    Update crash-course.txt
+
+    added Address & Program
+
+commit 8f828e0fc7c5b397f3c62710ebc79abaf5dc9381
+Author: Ricci-Gandia <rzgandia@Gmail.com>
+Date:   Sat Feb 1 16:16:05 2025 +0800
